@@ -1,0 +1,173 @@
+From e17e864dda76a32445a47dddedb2ac1b715b3799 Mon Sep 17 00:00:00 2001
+From: Naveen <204g1a3324@srit.ac.in>
+Date: Mon, 26 Aug 2024 16:17:19 +0530
+Subject: [PATCH] changes in getdatapoint method getratio, test cases, 26.08
+
+---
+ __pycache__/client3.cpython-312.pyc     | Bin 0 -> 1694 bytes
+ __pycache__/client_test.cpython-312.pyc | Bin 0 -> 3253 bytes
+ client3.py                              |  10 +++++++---
+ client_test.py                          |  24 +++++++++++++++++++++++-
+ 4 files changed, 30 insertions(+), 4 deletions(-)
+ create mode 100644 __pycache__/client3.cpython-312.pyc
+ create mode 100644 __pycache__/client_test.cpython-312.pyc
+
+diff --git a/__pycache__/client3.cpython-312.pyc b/__pycache__/client3.cpython-312.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..28fb9ee0e1322c20f8b8887d2b86d64d5b1f6b3e
+GIT binary patch
+literal 1694
+zcmahJOKclObjIFY+llSOX`D8RQMX8exXr&R4N*#!=7V~ul@wZ$mBHG0C&@at*WF#G
+z^5RGl;^0aMx#Eyi2oWj{LAkUN5*4Qc2M*;B$Es>399nVeEp0gE#GADZL8-(@`+oC&
+z^FI5?=W9T4x`uw6f8;^vPsY@buSV?O#R#n-1t~a*q$<V|wt0u-R2&kgI3-@;K1GtC
+z@Bm%Jtq4oq2<hKD5b?m*K=>{2!cHAepbzgNBsIb<N}Q<P9fri2=s3(*>BMVCWrRzd
+zJSqjhIN>-d->Qk~dDL;@)c@;B0S{7<)ItJ~eHgMo22liZtnMSqfvi;uN^R0{a-6h~
+z)=_W@IwuqtY5fu_ZW09OA#DH~$Z>#;UwP`*7=3nzt7?0}#zk5bUpv?X_A|UydyOUh
+zTSc(>mP0w5!{Mgq>;Vz$)S_u-M*91cT3k*pYKA#7JTN@ae<Mru+(lKn@bQZJ7xW@t
+z>jyJJkT-I|x1R>EhCC<_-DWXYu=$T3$Q(?jIPGj|@)gH_G`Lr2IP;FY(_)sq)d)Vh
+zJZ6$SH_yF?!h&^PoYplZ8z-WiOp4|r5z~YyL=l(eWR@7Bsfi0DO?24=4N;LzIism*
+zQ>46MYVjrNGPO)>PE{zM(bYJq^0Kk?oE0pLDL<doWHZcD{zg_aiOyb2Jzx;4>U%)9
+zO6pKrWbgn)b`B!rBhhOH(T(Vmw!EB;PUqr_vYvu;6C`dL(M--<)Y3IJI<M*S0_ja;
+zQt@8nCh0Z7Z|`6<o>WQNJlmJaQSSmVCm{c6mcQ<2aah3j0j#2@+-SucD86|svO4)k
+zbFfI(FPGZh*tl70>n}GCtX_VVtm11c=1M+sW31%uTAi#kHW$O|vzz>OWA8TCyAOU*
+z{O}Sm+HN%4ExXZJ!S<@+oFk9&m^BER;<R2D-zBC9HCHuJn-}d$#bi-VD>Zsf)S0))
+zcPQ+juG)Q_m^0X&DC+DlLf!D}tIU($3hZh43^pd!C%gPb{E1a@`zwtt#q+l=ZgU-a
+zlWi4?rDQc7i&?H2);C48Jfduh-O#xaOXv}yyd##or<%{m0S;SkJBrw4Q0LgCaq66y
+zoC>#7E@5bCD(H~AmZJWwo=mE9eL8`aFia{`dCJdRo4h(pam4P6ohfz4Vre-=Vlm38
+zFgTP49}9%y80BH46ob0zUR>Zs%Mb_yQ;?EP%IQQ_s9;Z=K?S=$hR%Ms_WbEkXQX=>
+zU^8crE{sHg3E1oH!X3CrQ?M9G@{WE6WNhP%X8`t`7~}oZ2zz&tZx;pk1mx*i<pJ^T
+zRs2$L;l7uxJnr0UL7cZ>?Ks<?`2x4Q*6|nJpMO-ql|W~)b*<xe$NJRQkvowmp`lV}
+z=-#;>M(>Y4^gR@Q_5I}grKx;&x*VE$61rXrT`z||C<kT>!c+Hnr72Jlc7vUT$=?Sr
+zJRs%4iITUkFj;(iUEK^;I!+d*isx=!q29oc*`L*&8EGdfZ@0`n_Qv;Is4euO0eSp|
+n#GT=dsm*iWT)FqwgRc7*%AI2+|JY;qr58cu5AE@&HUNJEdP=D?
+
+literal 0
+HcmV?d00001
+
+diff --git a/__pycache__/client_test.cpython-312.pyc b/__pycache__/client_test.cpython-312.pyc
+new file mode 100644
+index 0000000000000000000000000000000000000000..2bbdb5732306c6b620f4072b2243bb3295d44e89
+GIT binary patch
+literal 3253
+zcmd^BOKcNI7@nP7JI*@}P6#wDCgo9664?$A0+hyi@F<W5npCZEuoln8apG5Y*Fm;|
+zno2?CP^pzbf&&L16Gf_e<jAp7gA_NZh?YZJ^?<DQU<mCYhtmJw^+J+Tg`nO#(th*5
+z=du6%Gv8NMmJw)IKAs!O+X(p;8M9f6#Ig#+Ey4)nqQs9qjdC&Sr!n5obA*zUgz-~^
+z2@)BB80*_CZ%F(W$;vFF?+_x_QUbPB>n#bHEs8jj=F*(Ynn%9ZMYW2sq;`v{*q4aJ
+zRm}$61yPM8LaRe?MP}Iv#4Q-X&oSbsjGH2Uo>4%dRG+Eek``PRt*k2=k>YB<q^Kd&
+z7enBV;GCD|0ASr5ql~{pnZPW}s#7J*#!By4SQ#rXYARS|QB#GQFulr^k_oPx40aN7
+zl}?b6)gwS$Y-(|52$`U>Mg0V2)!RS^eGT@^UgT=maQ~{ypwE^}IUz&BECmJ{N51S9
+zNSe4Dz2W<F(9T}!$nOHh4Am@2ITDgIL5XCfmF-@)r@h(jZT5JaUhfh2p(CyCmV<5H
+z0|#3l?YQ>a`MYm{V+<Tus@yFecYAx=fkW+WZEYTn_jPv7ShNx~kqnB;s8*^*Vz94b
+zENRFtN0>(8vnXmJH2Uaw2z6}~f(a1p(WzfDj&H6EcI3|kr}5oAC**pdWCsHN4Y?K|
+zkE?+hmy3!b$!gD7N{q_5gEKr#Uy2TC*0EGVl@!fl^r&+>ohui*jsyn4MG1^1#>Z2E
+zzI13<lw*BzVnhn5N+6k5hZFH48yHH+VpwV(Nyb9W$`z?uh2=DR0wFzDf)HM9Nv1U?
+z62a9;84QWhP%0{_QXlSU=G_<B)v}SX6=u3@gAAA?KR522_U39^=HL5tJ~>_>#7Dd7
+zV?x4Q4+ZWV9mH;!#!y%ir%R1Z)4sL#U50%(8lI&A?7}pv+sA0Z!dF=*PZVs#a{Qrv
+z>vhYLwd{elK4-1JIg#yI*t&1J=i9wAy>}1Z+m<_e=DU-*qy6&({`re6Hz3Uq#c~7j
+z`DAK-{4*GRjPqgaPI?++k8vL$cZT+1cOJ?E2+z=q$OUM~;Fw{_P&h=x$R)Wja{Gtr
+zAF!YZeaw^EhGp0g@;^J2bAuf+mQT49p#q^20n4OZjZlMNN7#zcfPhs&-j47F!b{GL
+z+=z-d5q1D5#bY7A4UFd5C^b7H?4&F~R?GdvV%(>UW{zzlvH#(%uVXjPWe>obKa7U}
+z=eDfDLBB;dDw$Z8%>u`Glj1h^gEDSfZ_3ZgN?ywku8QY=WhSN1)4X6|(Pn#bCBXV@
+zrnPxFyu#|rS%vAfsnu1k+LbCZ!Yho&tr~ALex<8+rFs+N)vy}Vnr+6<&T60gJ*Qq_
+zeOs9Qzw}ExTy>d7XFuE?PIXvvnhzQ0P%0jR2Tk0W*DpLgvtc7C936Q)HF-Q6dHqV%
+z4?f<8dCZ`q86lBBpFMk){|g}U7{GMDS0oDW=b33fIo0Ab#2sIC=!A6tzOUEC%Wr{+
+zjJL8@VcfH)mEJ^La&fW~gbKb=oJQ%WG)ss663aBaq%7zftV_yn<8l*h4+KX}aNPXl
+z_T}u(8^LU7QP{Wino==qzi}!1(W2neBh=-Dx|_qd<*esMVo}($I%+8EU8vhL%`Xc3
+z*NQz0b-T0bI`QRf)62x`hAS>3lx<z8+dI8wQD|NpS{K(Z3hqsae-zw$UF>yPHCr$k
+z7h_T|sFekSu>?y+k*){^@!ex+<Xy0}GCZh>>;;%HimLv1WUQt-V2UW1F;nCTE#V{d
+zNiAZ*LHNVVLKW}PN7PMm%$OL72ZJt~W=q8*D*j@v#CZF(>W?iWH*A=|T_QZH^l@4t
+zye6Qld<e(I+OAJy#dge?`f>Rf$S`}9!vF=I<G6>U`X{pQsdX3U`MTkOy(wpJdP;yP
+gT;PaMaXs?`zimmdPoDbX+~?=6eOTa$uw9S*H}=`U6aWAK
+
+literal 0
+HcmV?d00001
+
+diff --git a/client3.py b/client3.py
+index 3fc09b7..1b69e27 100644
+--- a/client3.py
++++ b/client3.py
+@@ -35,14 +35,16 @@ def getDataPoint(quote):
+     stock = quote['stock']
+     bid_price = float(quote['top_bid']['price'])
+     ask_price = float(quote['top_ask']['price'])
+-    price = bid_price
++    price = (bid_price+ask_price) / 2
+     return stock, bid_price, ask_price, price
+ 
+ 
+ def getRatio(price_a, price_b):
+     """ Get ratio of price_a and price_b """
+     """ ------------- Update this function ------------- """
+-    return 1
++    if(price_b==0):
++        return
++    return price_a/price_b
+ 
+ 
+ # Main
+@@ -52,8 +54,10 @@ if __name__ == "__main__":
+         quotes = json.loads(urllib.request.urlopen(QUERY.format(random.random())).read())
+ 
+         """ ----------- Update to get the ratio --------------- """
++        prices={}
+         for quote in quotes:
+             stock, bid_price, ask_price, price = getDataPoint(quote)
++            prices[stock]=price
+             print("Quoted %s at (bid:%s, ask:%s, price:%s)" % (stock, bid_price, ask_price, price))
+ 
+-        print("Ratio %s" % getRatio(price, price))
++        print("Ratio %s" % getRatio(prices["ABC"], prices["DEF"]))
+diff --git a/client_test.py b/client_test.py
+index af2bf26..fbf0062 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -1,5 +1,6 @@
+ import unittest
+-from client3 import getDataPoint
++from client3 import getDataPoint, getRatio
++
+ 
+ class ClientTest(unittest.TestCase):
+   def test_getDataPoint_calculatePrice(self):
+@@ -8,6 +9,8 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote),(quote['stock'],quote['top_bid']['price'],quote['top_ask']['price'],(quote['top_bid']['price']+quote['top_ask']['price'])/2))
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+@@ -15,10 +18,29 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote),(quote['stock'],quote['top_bid']['price'],quote['top_ask']['price'],(quote['top_bid']['price']+quote['top_ask']['price'])/2))
+ 
+ 
+   """ ------------ Add more unit tests ------------ """
+ 
++  def test_getRatio(self):
++    """ Test the getRatio function """
++    self.assertEqual(getRatio(10, 2), 5.0)
++    self.assertEqual(getRatio(15, 3), 5.0)
++    self.assertEqual(getRatio(20, 4), 5.0)
++    self.assertEqual(getRatio(0, 5), 0.0)
++    self.assertIsNone(getRatio(10, 0))  # Division by zero
++    self.assertEqual(getRatio(-10, -2), 5.0)
++    self.assertEqual(getRatio(-15, 3), -5.0)
++    self.assertEqual(getRatio(10, -2), -5.0)
++    self.assertEqual(getRatio(5, 5), 1.0)
++    self.assertEqual(getRatio(100, 100), 1.0)
++    self.assertEqual(getRatio(1e6, 1e3), 1000.0)
++    self.assertEqual(getRatio(1e9, 1e6), 1000.0)
++    self.assertEqual(getRatio(1e9, 1e6), 1000.0)
++
++
+ 
+ 
+ if __name__ == '__main__':
+-- 
+2.45.2.windows.1
+
